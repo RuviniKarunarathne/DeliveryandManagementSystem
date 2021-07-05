@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+          <servlet>
+			<servlet-name>customerRegister</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PeronalDeliveryRegisterServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>customerRegister</servlet-name>
+			<url-pattern>/register</url-pattern>
+		</servlet-mapping>
+		
+		 <servlet>
+			<servlet-name>orderRegister</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalOrderRegisterServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>orderRegister</servlet-name>
+			<url-pattern>/orderRegister</url-pattern>
+		</servlet-mapping>
+		
+		 <servlet>
+			<servlet-name>customerSearch</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalCustomerSearchservlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>customerSearch</servlet-name>
+			<url-pattern>/search</url-pattern>
+		</servlet-mapping>
+		
+		
+		 <servlet>
+			<servlet-name>orderSearch</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalOrderSearchServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>orderSearch</servlet-name>
+			<url-pattern>/orderSearch</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		
+		
+		
+		<servlet>
+			<servlet-name>customerUpdate</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalCustomerUpdateServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>customerUpdate</servlet-name>
+			<url-pattern>/update</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>customerDelete</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalCustomerDeleteServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>customerDelete</servlet-name>
+			<url-pattern>/delete</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		<servlet>
+			<servlet-name>orderUpdate</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalOrderUpdateServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>orderUpdate</servlet-name>
+			<url-pattern>/orderupdate</url-pattern>
+		</servlet-mapping>
+		
+		
+		<servlet>
+			<servlet-name>orderDelete</servlet-name>
+			<servlet-class>com.SPpersonalCustomer.PersonalOrderDeleteServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>orderDelete</servlet-name>
+			<url-pattern>/orderdelete</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		
+		
+		
+         
+</web-app>
